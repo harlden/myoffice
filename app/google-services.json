@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890161431944",
+    "project_id": "office-employee-8b261",
+    "storage_bucket": "office-employee-8b261.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890161431944:android:eca9074eeb1a1e0b88263d",
+        "android_client_info": {
+          "package_name": "com.example.myoffice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsQla46z2Nj07BtK8lIobzIm1psO8bZAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

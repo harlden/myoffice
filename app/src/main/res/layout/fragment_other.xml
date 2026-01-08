@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.other.OtherFragment">
+
+    <RelativeLayout
+        android:id="@+id/box_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image_logo_account"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_account_logo" />
+
+        <RelativeLayout
+            android:id="@+id/box_fio_account"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/image_logo_account"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/fio_account"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="false"
+                android:textSize="30dp"
+                style="@style/Theme.MyOffice.MainText"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/exit_account"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="EditFioAccount"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_exit_foreground"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/box_fio_account"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/job_title_account"
+                android:layout_height="45dp"
+                android:layout_width="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:textColor="@color/main_grey"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box_settings"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/box_profile">
+
+        <LinearLayout
+            android:id="@+id/settings_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Icon Settings"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_gear" />
+
+            <TextView
+                android:id="@+id/settings_textview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/other_layout_settings"
+                style="@style/Theme.MyOffice.MainText"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/settings_linearlayout"
+            android:layout_marginStart="10dp">
+
+            <ListView
+                android:id="@+id/settings_listview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:divider="@color/main_red"
+                android:dividerHeight="0.1dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

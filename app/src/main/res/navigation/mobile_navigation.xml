@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myoffice.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_services"
+            app:destination="@id/navigation_services" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_services"
+        android:name="com.example.myoffice.ui.services.fragments.Services"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/action_navigation_services_to_sickLeave"
+            app:destination="@id/service_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.example.myoffice.ui.other.OtherFragment"
+        android:label="@string/title_other"
+        tools:layout="@layout/fragment_other" />
+
+    <fragment
+        android:id="@+id/service_main"
+        android:name="com.example.myoffice.ui.services.fragments.ServiceMain"
+        android:label="@string/title_services"
+        tools:layout="@layout/service_main">
+        <action
+            android:id="@+id/action_service_main_to_service_additional"
+            app:destination="@id/service_additional" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/service_additional"
+        android:name="com.example.myoffice.ui.services.fragments.ServiceAdditional"
+        android:label="@string/title_services"
+        tools:layout="@layout/service_main">
+        <action
+            android:id="@+id/action_service_additional_to_navigation_services"
+            app:destination="@id/navigation_services" />
+    </fragment>
+</navigation>

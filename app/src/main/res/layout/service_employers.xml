@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Поиск..."
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textColorHint="@color/main_grey"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_search"
+            android:drawableStart="@drawable/ic_search_foreground"
+            android:drawablePadding="8dp" />
+
+        <ImageButton
+            android:id="@+id/addEmployeeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_user_foreground"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="8dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="70dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_employers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Кабинет сотрудника</string>
+    <string name="title_home">Главная</string>
+    <string name="title_services">Сервисы</string>
+    <string name="title_other">Прочее</string>
+    <string name="welcome_text">Добро пожаловать!</string>
+
+    <string name="other_layout_settings">Настройки</string>
+    <string name="hint_input_fio_account">Введите имя и Фамилия</string>
+
+    <string name="login_app_name">Кабинет\nсотрудника</string>
+    <string name="login_info_text">Пожалуйста, авторизуйтесь для входа</string>
+    <string name="login_welcome">Добро пожаловать</string>
+    <string name="login_login">Логин</string>
+    <string name="login_password">Пароль</string>
+    <string name="login">Авторизоваться</string>
+    <string name="login_registration">Регистрация</string>
+    <string name="login_forgot_password">Забыли пароль</string>
+    <string name="login_remember_me">Запомнить меня</string>
+
+    <string name="registration_welcome">Регистрация аккаунта</string>
+    <string name="registration_info_text">Пожалуйста, заполните данные</string>
+    <string name="registration_button">Зарегистрировать</string>
+    <string name="registration_login">Авторизация</string>
+</resources>
